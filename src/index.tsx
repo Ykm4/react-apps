@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import styled, { createGlobalStyle } from 'styled-components'
 import * as color from './color'
+import CardFilter from './CardFilter'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header>
         <Logo>Kanban board</Logo>
 
-        <CardFilter placeholder="Filter cards" />
+        <CardFilter />
       </Header>
 
       <MainArea>
@@ -66,14 +67,6 @@ const Logo = styled.div`
   height: 100%;
   padding: 16px 0;
   overflow-y: auto;
-`
-
-const CardFilter = styled.input`
-  display: flex;
-  align-items: center;
-  min-width: 300px;
-  border: solid 1px ${color.Silver};
-  border-radius: 3px;
 `
 
 const MainArea = styled.div`
