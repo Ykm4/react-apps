@@ -3,12 +3,18 @@ import styled from 'styled-components'
 import * as color from './color'
 import { CardFilter } from './CardFilter'
 
-export function Header({ className }: { className?: string }) {
+type Props = {
+  className?: string
+  filterValue?: string
+  onFilterChange?: (value: string) => void
+}
+
+export function Header({ className, filterValue, onFilterChange }: Props) {
   return (
     <Container className={className}>
       <Logo>Kanban board</Logo>
 
-      <CardFilter />
+      <CardFilter value={filterValue} onChange={onFilterChange} />
     </Container>
   )
 }

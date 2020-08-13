@@ -3,11 +3,20 @@ import styled from 'styled-components'
 import * as color from './color'
 import { SearchIcon as _SearchIcon } from './icon'
 
-export function CardFilter() {
+type Props = {
+  value?: string
+  onChange?: (value: string) => void
+}
+
+export function CardFilter({ value, onChange }: Props) {
   return (
     <Container>
       <SearchIcon />
-      <Input placeholder="Filter cards" />
+      <Input
+        placeholder="Filter cards"
+        value={value}
+        onChange={event => onChange?.(event.currentTarget.value)}
+      />
     </Container>
   )
 }
