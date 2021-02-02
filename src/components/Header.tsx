@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import * as color from './color'
+import * as color from '../util/color'
 import { CardFilter } from './CardFilter'
 
 type Props = {

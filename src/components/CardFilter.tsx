@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import * as color from './color'
-import { SearchIcon as _SearchIcon } from './icon'
+import * as color from '../util/color'
+import { SearchIcon as _SearchIcon } from '../icon'
 
 type Props = {
   value?: string

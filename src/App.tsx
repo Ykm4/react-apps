@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Header as _Header } from './Header'
-import { Column } from './Column'
+import { Header as _Header } from './components/Header'
+import { Column } from './components/Column'
 
 export function App() {
   const [filterValue, setFilterValue] = useState('')
   return (
     <Container>
       <Header filterValue={filterValue} onFilterChange={setFilterValue} />
-
       <MainArea>
         <HorizontalScroll>
           <Column

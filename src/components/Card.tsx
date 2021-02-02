@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import * as color from './color'
-import { CheckIcon as _CheckIcon, TrashIcon } from './icon'
+import * as color from '../util/color'
+import { CheckIcon as _CheckIcon, TrashIcon } from '../icon'
 
 export function Card({ text }: { text?: string }) {
   return (

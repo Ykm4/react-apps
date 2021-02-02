@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import * as color from './color'
+import * as color from '../util/color'
 import { Button, ConfirmButton } from './Button'
 
 /**
